@@ -1,0 +1,185 @@
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.panel {
+  text-align: center;
+}
+
+.header-left, .header-right {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  justify-content: flex-start;
+  filter: opacity(75%);
+  font-size: 0.8rem;
+  padding: 20px;
+}
+
+.header-right {
+  justify-content: flex-end; /* Sağ hizalama */
+  margin-right: 20px; /* Sağ boşluk */
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 0.8rem;
+}
+
+.headerli {
+  margin: 0 4px; /* Elemanlar arasındaki boşluk */
+}
+
+.headerli a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.headerli img {
+  width: 20px; /* Apps butonunun genişliği */
+  height: 20px; /* Apps butonunun yüksekliği */
+  margin-right: 4px; /* Görsel ile bağlantı metni arasındaki boşluk */
+  vertical-align: middle; /* Metin ile aynı hizada görünmesi için */
+}
+
+.headerli a:hover {
+  text-decoration: underline;
+}
+
+#appsbutton {
+  filter: opacity(55%);
+  color: aqua;
+  width: 1rem;
+}
+
+#signin img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.container {
+  margin-top: 7%;
+}
+
+.logo {
+  width: 272px; /* Logo boyutu */
+}
+
+.search-area {
+  background: #fff;
+  display: flex;
+  z-index: 3;
+  box-shadow: 0 0px 3px 0 rgba(102, 102, 102, 0.24), 0 2px 5px 0 rgba(102, 101, 101, 0.19);
+  height: 44px;
+  margin: 0 auto;
+  margin-top: 1%;
+  width: 582px;
+  align-items: center; /* Dikey hizalama */
+  position: relative; /* İkonları konumlandırmak için */
+  padding: 0 10px; /* İçeriklerin daha iyi görünmesi için iç boşluk ekledik */
+  border-radius: 24px;
+}
+
+.search-area:hover {
+  box-shadow: 0 2px 3px 0 rgba(87, 86, 86, 0.24), 0 2px 5px 0 rgba(121, 121, 121, 0.19);
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  align-items: center; /* İkonlar ve girdi alanının ortalanması */
+}
+
+.search-img-left,
+.search-img-right {
+    display: flex;
+    align-items: center; /* İkonların dikey olarak ortalanması */
+}
+
+.search-img-left span,
+.search-img-right img {
+    width: 24px; /* İkon boyutu */
+    height: 24px; /* İkon boyutu */
+    margin: 0 8px; /* İkonlar arası boşluk */
+}
+
+
+.input {
+  width: 480px; /* Arama alanı genişliği */
+  height: 44px;
+  border: none;
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.buttons {
+  margin-top: 20px;
+  
+}
+
+.googlesearch,
+.feelinglucky {
+  padding: 10px 24px;
+  border: 1px solid #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 24px;
+  box-shadow: 0 0px 3px 0 rgba(102, 102, 102, 0.24), 0 2px 5px 0 rgba(102, 101, 101, 0.19);
+  background-color: white;
+  color: #5f6368;
+  cursor: pointer;
+  height: 36px;
+  margin: 0 6px;
+}
+
+.googlesearch:hover,
+.feelinglucky:hover {
+  background-color: #f8f9fa;
+}
+
+.footer {
+  display: flex;
+  gap: 70%;
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  height: 3rem;
+  align-items: center;
+  box-shadow: 0 0px 3px 1px rgba(102, 102, 102, 0.24), 0 2px 5px 0 rgba(102, 101, 101, 0.19);
+}
+
+.left, .right {
+  display: flex;
+}
+
+.footerli {
+  margin-right: 16px;
+}
+
+.footerli a {
+  color: #464849;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footerli a:hover {
+  text-decoration: underline;
+}
